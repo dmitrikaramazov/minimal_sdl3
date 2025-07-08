@@ -15,9 +15,6 @@ FetchContent_Declare(
     GIT_TAG release-3.2.16
 )
 FetchContent_MakeAvailable(SDL3)
-#add_subdirectory(vendor/SDL EXCLUDE_FROM_ALL)
-#find_package(SDL3 REQUIRED)
-
 
 # WIN32 causes it to create a GUI program
 add_executable(${PROJECT_NAME} WIN32 main.c)
